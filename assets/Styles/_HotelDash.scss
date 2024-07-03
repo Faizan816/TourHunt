@@ -1,0 +1,97 @@
+.dashboard-background {
+    background-color: #1F516D;
+    padding: 2% 0;
+
+    .dashboard-inner {
+
+        .pad {
+            padding-left: 0;
+
+            .inner-main {
+                background-color: #143E56;
+                display: flex;
+                flex-direction: column;
+                padding: 32% 4%;
+                height: 27rem;
+
+                .tab {
+                    padding: 4% 0% 4% 0%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6px;
+
+                    .text {
+                        font-weight: 500;
+                        color: white;
+                    }
+
+                    .active-text {
+                        color: rgb(157, 156, 156);
+                    }
+
+                }
+            }
+        }
+
+        .inner-content {
+            padding-left: 3%;
+
+            .heading-edit {
+                margin-bottom: 5%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .heading-text {
+                    color: white;
+                    flex: 0.87;
+                }
+
+                .edit-icon{
+                    color: white;
+                }
+            }
+
+            .hotel-content {
+                background-color: #143E56;
+                padding: 2% 2% 2% 2%;
+
+                .data {
+                    color: white;
+                    margin-bottom: 2%;
+                    display: flex;
+
+                    .text-heading {
+                        font-weight: 700;
+                        display: inline-block;
+                        width: 180px;
+                    }
+
+                    .margin{
+                        margin-bottom: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.edit-contents{
+    margin-bottom: 2%;
+
+    .edit-label{
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+}
+
+   
+.data-img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 11%;
+    border-radius: 8px;
+}

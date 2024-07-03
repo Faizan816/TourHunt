@@ -1,0 +1,88 @@
+.add-people {
+    padding-top: 2%;
+
+    .container {
+        width: 50%;
+        background-color: #143e56;
+        padding: 3%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .input-and-button-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .label-and-input-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+
+                    .email-label {
+                        font-size: small;
+                    }
+                }
+
+                .send-invite-button {
+                    background-color: #2a656d;
+                    font-size: small;
+                    font-weight: bold;
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                }
+
+                .send-invite-button:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            .input-field {
+                background-color: inherit;
+                outline: none;
+                border-bottom: 1px solid white;
+                border-radius: 10px;
+                font-size: medium;
+                padding: 5px 10px;
+                color: rgb(255, 255, 255, 0.8);
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+
+            .finish-button {
+                background-color: #2a656d;
+                font-size: small;
+                font-weight: bold;
+                padding: 5px 20px;
+                border-radius: 10px;
+            }
+
+            .finish-button:hover {
+                opacity: 0.5;
+            }
+
+            .add-new-field-button-container {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+
+                .add-new-field-button {
+                    font-size: 10px;
+                }
+            }
+
+            .add-new-field-button-container:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

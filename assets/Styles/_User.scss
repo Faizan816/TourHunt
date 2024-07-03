@@ -1,0 +1,97 @@
+.user-div {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .parent {
+        width: 72%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #e9e9e9;
+        box-shadow: -1px 4px 8px rgba(0, 0, 0, 0.1);
+        
+
+        .radio-container {
+            width: 95%;
+            text-align: center;
+
+            .label_icon {
+                position: relative;
+                margin: 8% 0;
+
+                .user-label {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+
+            .radio_buttons {
+                display: flex;
+                justify-content: center;
+
+                .label {
+                    margin-right: 8%;
+                    // background: yellow;
+                    width: 28%;
+
+                    .radio-label {
+                        display: block;
+                        font-size: 1.3rem;
+
+                        .radio_label_button {
+                            margin-right: 4%;
+                        }
+                    }
+                }
+
+                .label_two {
+                    width: 30%;
+                }
+
+            }
+        }
+    }
+
+
+    .button {
+        text-align: center;
+        margin: 6% 0;
+        position: relative;
+        display: inline-block;
+
+        .Login_Button {
+            background: #FFA500;
+            color: black;
+            padding: 12px 51px;
+            border-radius: 6px;
+            position: relative;
+            z-index: 1;
+            transition: 0.3s all ease-in;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: #FFA500;
+                height: 100%;
+                width: 100%;
+                border-radius: 6px;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: 0.3s all ease-in;
+            }
+
+            &:hover {
+                &::before {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

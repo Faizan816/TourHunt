@@ -1,0 +1,36 @@
+.selectBox{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:  20px;
+    padding-right:  20px;
+    display: flex;
+    justify-content:  space-between;
+    align-items:  center;
+    width: 50%;
+    background-color:  #2A656D;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.selectBox:hover{
+    cursor: pointer;
+    background-color: rgba(42, 101, 109, 0.5);
+}
+
+.droppedBox{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: #2A656D;
+    font-weight: bold;
+}
+
+.droppedBox:hover{
+    cursor: pointer;
+    background-color: rgba(42, 101, 109, 0.5);
+}

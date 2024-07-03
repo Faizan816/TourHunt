@@ -1,0 +1,300 @@
+.main_box {
+    background-color: white;
+    position: relative;
+
+    .row-change {
+        .padding-change {
+            padding: 0;
+        }
+
+        .block {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+
+            .image-box {
+                max-width: 100%;
+                height: auto;
+                width: 98%;
+                background: url("../Image/oic.png");
+                background-repeat: no-repeat;
+                transform-origin: top left;
+                position: absolute;
+                left: 0%;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                background-size: cover;
+                background-position: left top;
+                // transform: rotate(5deg);
+                // box-shadow:2px 0px 17px 0px rgba(0, 0, 0, 0.2509803922);
+
+                @media screen and (max-width: 990px) {
+                    width: 100%;
+                    left: 0;
+                    transform: skewY(8deg);
+                    transform-origin: top right;
+                }
+            }
+        }
+
+        .title {
+            text-align: center;
+
+            .heading {
+                display: inline-block;
+                border-bottom: 1px solid #3f3e3e;
+                font-weight: 700;
+                color: #3f3e3e;
+            }
+        }
+
+        .login_thing {
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 990px) {
+                padding: 5% 6% 0;
+            }
+
+            .inputs {
+                margin-top: 11%;
+
+                .email-div {
+                    .email-label {
+                        font-size: 1.2rem;
+                        color: #6f7071;
+                    }
+
+                    .input-container {
+                        position: relative;
+                        // background: pink;
+
+                        .email_container {
+                            outline: none;
+                            border-bottom: 2px solid #7e7f82;
+                            width: 80%;
+                            background: transparent;
+                            font-size: 14px;
+                            color: #3f3e3e;
+
+                            @media screen and (max-width: 990px) {
+                                width: 90%;
+                            }
+                        }
+
+                        .email_container::placeholder {
+                            color: #bdbbbb;
+                            /* Change the color to your desired color */
+                        }
+                    }
+                }
+
+                .Password_div {
+                    margin-top: 4%;
+
+                    .password-label {
+                        font-size: 1.2rem;
+                        color: #6f7071;
+                    }
+
+                    .input-container {
+                        position: relative;
+
+                        .password_container {
+                            outline: none;
+                            border-bottom: 2px solid #7e7f82;
+                            width: 80%;
+                            background: transparent;
+                            font-size: 14px;
+                            color: #3f3e3e;
+
+                            @media screen and (max-width: 990px) {
+                                width: 90%;
+                            }
+                        }
+
+                        .link {
+                            text-decoration: none;
+                            margin-top: 0.5rem;
+                            font-size: 14px;
+                            font-style: italic;
+                            color: #143e56;
+                            cursor: pointer;
+                            display: block;
+                        }
+                    }
+                }
+
+                .input-icon {
+                    color: black;
+                    position: absolute;
+                    left: 76%;
+                    top: -17%;
+                    font-size: 25px;
+                    height: 25px;
+
+                    @media screen and (max-width: 990px) {
+                        left: 87%;
+                    }
+                }
+            }
+
+            .button {
+                text-align: center;
+                margin: 6% 0;
+                position: relative;
+                display: inline-block;
+
+                .Login_Button {
+                    background: #ffa500;
+                    color: black;
+                    padding: 12px 51px;
+                    border-radius: 6px;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.3s all ease-in;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: #ffa500;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 6px;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: 0.3s all ease-in;
+                    }
+
+                    &:hover {
+                        &::before {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+
+            .horizontal-line {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                hr {
+                    width: 39%;
+                }
+
+                p {
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+            }
+
+            .account_list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 6% 0;
+
+                button {
+                    width: 70%;
+                    align-items: center;
+                    position: relative;
+                    z-index: 1;
+                    display: flex;
+                    justify-content: center;
+                    background-color: #ffa500;
+                    padding: 1% 0;
+                    border-radius: 31px;
+                    color: black;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+
+                    .google-icon {
+                        margin-right: 2%;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: #ffa500;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 31px;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: 0.3s all ease-in;
+                    }
+
+                    &:hover {
+                        &::before {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+
+            .statement {
+                .link {
+                    text-align: center;
+                    text-decoration: none;
+
+                    .register {
+                        margin-bottom: 0;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.change-input-container {
+    position: relative;
+
+    .password_container {
+        outline: none;
+        border-bottom: 2px solid #7e7f82;
+        width: 98%;
+        background: transparent;
+        font-size: 14px;
+        color: #3f3e3e;
+
+        @media screen and (max-width: 990px) {
+            width: 90%;
+        }
+    }
+
+    .input-icon {
+        color: black;
+        position: absolute;
+        left: 93%;
+        top: -17%;
+        font-size: 25px;
+        height: 25px;
+
+        @media screen and (max-width: 990px) {
+            left: 87%;
+        }
+    }
+}
+
+.register {
+    text-align: center;
+
+    .link-reg {
+        margin-top: 0.5rem;
+        font-size: 18px;
+        margin-left: 1%;
+        font-style: italic;
+        color: #143e56;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

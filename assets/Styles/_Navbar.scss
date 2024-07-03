@@ -1,0 +1,11 @@
+.menulist:hover {
+    cursor: pointer;
+}
+
+.menulist {
+    padding: 5px 15px;
+}
+
+.active {
+    border-bottom: 3px solid black;
+}

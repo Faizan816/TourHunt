@@ -1,0 +1,99 @@
+.community-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+
+    .community-container {
+        background-color: #143e56;
+        width: 50%;
+        padding: 2%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .community-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            #create-invite-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                #invitation:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+            }
+
+            .create-community-button {
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+                gap: 3px;
+            }
+
+            .create-community-button:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+
+            .community-label {
+                font-weight: bold;
+            }
+        }
+
+        .communities {
+            background-color: #2a656d;
+            padding: 3%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            margin-bottom: 2%;
+
+            .community-admin {
+                font-size: medium;
+            }
+
+            .community-members {
+                font-size: small;
+            }
+
+            .controls {
+                display: flex;
+                align-items: center;
+
+                .control-buttons-container {
+                    display: flex;
+                    gap: 10px;
+
+                    .add-people:hover {
+                        opacity: 0.5;
+                    }
+
+                    .edit-community:hover {
+                        opacity: 0.5;
+                    }
+
+                    .delete-community:hover {
+                        opacity: 0.5;
+                        cursor: pointer;
+                    }
+                }
+
+                #leave-community:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .communities:hover {
+            opacity: 0.8;
+        }
+    }
+}

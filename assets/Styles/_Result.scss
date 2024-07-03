@@ -1,0 +1,12 @@
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+  @include center();
+}
+
+.logo {
+    color: cyan;
+}

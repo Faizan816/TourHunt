@@ -1,0 +1,30 @@
+.star {
+    color: grey;
+    cursor: pointer;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+.checked {
+    color: orange;
+}
+
+.star:hover {
+    color: gold;
+}
+
+.gold {
+    color: gold;
+}
+
+.not-rated {
+    color: grey;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+.rated {
+    color: gold;
+    font-size: 24px;
+    letter-spacing: 5px;
+}

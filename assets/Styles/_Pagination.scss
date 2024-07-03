@@ -1,0 +1,53 @@
+.Paginationcontainer {
+    width: 50%;
+    overflow-x: auto;
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap:10px;
+}
+
+.pageLink {
+    cursor: pointer;
+}
+
+.center {
+   @include center();
+}
+
+/* pagination pageItem */
+.pageItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #eaeaea;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* pagination page item when active */
+.pageItemActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #eaeaea;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #2A656D;
+    color: white;
+    padding: 5px 12px;
+}

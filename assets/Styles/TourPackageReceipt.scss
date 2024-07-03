@@ -1,0 +1,70 @@
+.receipt-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    color: black;
+    margin-top: 10px;
+    font-size: small;
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .receipt-header,
+    .customer-info,
+    .seller-info,
+    .tour-details,
+    .summary,
+    .inclusions,
+    .exclusions,
+    .total,
+    .footer {
+        margin-bottom: 20px;
+    }
+
+    .company-info,
+    .receipt-info {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+
+    .company-info h2 {
+        margin: 0;
+    }
+
+    .receipt-info {
+        text-align: right;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    table th {
+        background-color: #f4f4f4;
+    }
+
+    .total h3 {
+        text-align: right;
+        margin: 0;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #555;
+    }
+}

@@ -1,0 +1,48 @@
+.create-community {
+    padding-top: 2%;
+
+    .container {
+        background-color: #143e56;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+        font-weight: bold;
+        padding: 3%;
+        border-radius: 10px;
+
+        .community-name-input {
+            font-size: medium;
+            background-color: inherit;
+            outline: none;
+            border-radius: 10px;
+            border-bottom: 1px solid white;
+            padding: 5px 10px;
+            width: 100%;
+            color: rgb(255, 255, 255, 0.8);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+
+            .finish-button,
+            .add-people-button {
+                background-color: #2a656d;
+                font-size: small;
+                font-weight: bold;
+                padding: 5px 20px;
+                border-radius: 10px;
+            }
+
+            .finish-button:hover,
+            .add-people-button:hover {
+                opacity: 0.5;
+            }
+        }
+
+        .error-message {
+            color: red;
+        }
+    }
+}

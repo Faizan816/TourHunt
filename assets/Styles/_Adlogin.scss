@@ -1,0 +1,121 @@
+.main_box {
+    background-color: white;
+    position: relative;
+
+    .padding-change {
+        padding: 0;
+    }
+
+    .block {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+
+        .image-box {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            background: url("../Image/admin.png");
+            background-repeat: no-repeat;
+            transform-origin: top left;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            bottom: 0;
+            right: 0;
+            background-size: cover;
+            background-position: left top;
+
+            @media screen and (max-width: 990px) {
+                width: 100%;
+                left: 0;
+                transform: skewY(8deg);
+                transform-origin: top right;
+            }
+        }
+    }
+
+    .admin-login_thing {
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 5%;
+        padding-left: 5%;
+
+        @media screen and (max-width: 990px) {
+            padding: 5% 6% 0;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 15%;
+
+            .heading {
+                display: inline-block;
+                border-bottom: 1px solid #3f3e3e;
+                font-weight: 700;
+                color: #3f3e3e;
+            }
+        }
+
+        .input-icon {
+            color: black;
+            position: absolute;
+            left: 58%;
+            top: 17%;
+            font-size: 25px;
+            height: 25px;
+
+            @media screen and (max-width: 990px) {
+                left: 87%;
+            }
+        }
+
+        .button_parent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5%s;
+
+            .button {
+                text-align: center;
+                position: relative;
+                display: inline-block;
+
+                .Login_Button {
+                    background: #FFA500;
+                    color: black;
+                    padding: 26px 51px;
+                    border-radius: 6px;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.3s all ease-in;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: #FFA500;
+                        height: 100%;
+                        width: 100%;
+                        padding: 26px 51px;
+                        border-radius: 6px;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: 0.3s all ease-in;
+                    }
+
+                    &:hover {
+                        &::before {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

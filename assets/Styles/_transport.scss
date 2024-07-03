@@ -1,0 +1,15 @@
+.transport_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url("../Image/transport.jpg");
+    z-index: -1;
+    filter: brightness(53%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}

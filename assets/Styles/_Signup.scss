@@ -1,0 +1,269 @@
+.main_box {
+    background-color: white;
+    position: relative;
+
+    .row-change_padding {
+        .padding-change {
+            padding: 0;
+        }
+
+        .block {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+
+            .image {
+                max-width: 100%;
+                height: auto;
+                width: 92%;
+                background: url("../Image/oic.png");
+                background-repeat: no-repeat;
+                transform-origin: top left;
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                bottom: 0;
+                right: 0;
+                background-size: cover;
+                background-position: left top;
+                // transform: rotate(5deg);
+                // box-shadow:2px 0px 17px 0px rgba(0, 0, 0, 0.2509803922);
+
+                @media screen and (max-width: 990px) {
+                    width: 100%;
+                    left: 0;
+                    transform: skewY(8deg);
+                    transform-origin: top right;
+                }
+            }
+        }
+
+        .title {
+            text-align: center;
+
+            .heading {
+                display: inline-block;
+                border-bottom: 1px solid #3f3e3e;
+                font-weight: 700;
+                color: #3f3e3e;
+            }
+        }
+
+        .login_thing {
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 990px) {
+                padding: 5% 6% 0;
+            }
+
+            .inputs_container {
+                padding-top: 9%;
+
+                .name-div {
+                    .name-label {
+                        font-size: 1.2rem;
+                        color: #6f7071;
+                    }
+
+                    .input-container {
+                        position: relative;
+                        // background: pink;
+
+                        .name_container {
+                            outline: none;
+                            border-bottom: 2px solid #7e7f82;
+                            width: 80%;
+                            background: transparent;
+                            font-size: 14px;
+                            transition: border-color 0.3s ease;
+                            color: #3f3e3e;
+
+                            @media screen and (max-width: 990px) {
+                                width: 90%;
+                            }
+
+                            .error {
+                                border-color: red;
+                            }
+                        }
+
+                        .name_container::placeholder {
+                            color: #bdbbbb; /* Change the color to your desired color */
+                        }
+                    }
+                }
+                .email-div {
+                    .email-label {
+                        font-size: 1.2rem;
+                        color: #6f7071;
+                    }
+
+                    .input-container {
+                        position: relative;
+                        // background: pink;
+
+                        .email_container {
+                            outline: none;
+                            border-bottom: 2px solid #7e7f82;
+                            width: 80%;
+                            background: transparent;
+                            font-size: 14px;
+                            transition: border-color 0.3s ease;
+                            color: #3f3e3e;
+
+                            @media screen and (max-width: 990px) {
+                                width: 90%;
+                            }
+
+                            .error {
+                                border-color: red;
+                            }
+                        }
+
+                        .email_container::placeholder {
+                            color: #bdbbbb; /* Change the color to your desired color */
+                        }
+                    }
+                }
+
+                .Password_div {
+                    margin-top: 4%;
+
+                    .password-label {
+                        font-size: 1.2rem;
+                        color: #6f7071;
+                    }
+
+                    .input-container {
+                        position: relative;
+
+                        .password_container {
+                            outline: none;
+                            border-bottom: 2px solid #7e7f82;
+                            width: 80%;
+                            background: transparent;
+                            font-size: 14px;
+                            color: #3f3e3e;
+
+                            @media screen and (max-width: 990px) {
+                                width: 90%;
+                            }
+                        }
+
+                        .link {
+                            text-decoration: none;
+
+                            p {
+                                margin-top: 0.5rem;
+                                font-size: 14px;
+                                font-style: italic;
+                                color: #143e56;
+                            }
+                        }
+                    }
+                }
+
+                .radio-container {
+                    margin-top: 4%;
+
+                    .label_icon {
+                        position: relative;
+
+                        .gender-label {
+                            font-size: 1.2rem;
+                            color: #6f7071;
+                        }
+
+                        .people_icon {
+                            position: absolute;
+                            position: absolute;
+                            left: 76%;
+                            font-size: 25px;
+                            height: 25px;
+
+                            @media screen and (max-width: 990px) {
+                                left: 87%;
+                            }
+                        }
+                    }
+
+                    .radio_buttons {
+                        display: flex;
+
+                        .label_one {
+                            margin-right: 21%;
+                        }
+                    }
+                }
+
+                .checkbox_div {
+                    margin-top: 7%;
+
+                    .label_italic {
+                        font-weight: 700;
+                        font-style: italic;
+                    }
+                }
+
+                .input-icon {
+                    color: black;
+                    position: absolute;
+                    left: 76%;
+                    top: -17%;
+                    font-size: 25px;
+                    height: 25px;
+
+                    @media screen and (max-width: 990px) {
+                        left: 87%;
+                    }
+                }
+            }
+
+            .button {
+                text-align: center;
+                margin: 6% 0;
+                position: relative;
+                display: inline-block;
+
+                .Login_Button {
+                    background: #ffa500;
+                    color: black;
+                    padding: 12px 51px;
+                    border-radius: 6px;
+                    position: relative;
+                    z-index: 1;
+                    transition: 0.3s all ease-in;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: #ffa500;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 6px;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        transition: 0.3s all ease-in;
+                    }
+
+                    &:hover {
+                        &::before {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}

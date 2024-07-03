@@ -1,0 +1,23 @@
+@mixin list{
+    list-style: none;
+}
+
+@mixin center(){
+    display: flex;
+    justify-content: center;
+}
+
+@mixin containers(){
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin signUpAndLoginButton (){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}

@@ -1,0 +1,84 @@
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.dialog-container {
+    // background-color: #1f516d;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: medium;
+
+    .close-icon-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2px;
+
+        .close-icon:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+
+    .dialog-wrapper {
+        background-color: #1f516d;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        min-width: 400px;
+
+        .dialog-content-holder {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+.dialog-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+
+    .dialog-continue-button {
+        background-color: rgb(37, 153, 37);
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+
+    .dialog-continue-button:hover,
+    .dialog-cancel-button:hover {
+        opacity: 0.5;
+    }
+
+    .dialog-cancel-button {
+        background-color: rgb(180, 28, 28);
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+}
+
+.close-dialog {
+    cursor: pointer;
+    background-color: #2a656d;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.close-dialog:hover {
+    opacity: 0.5;
+}
