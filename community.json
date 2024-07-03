@@ -1,0 +1,42 @@
+{
+  "_id": "65c6a4b738361d26a9e0034a",
+  "name": "Asma Community",
+  "users": [
+    {
+      "_id": "65c6a4b738361d26a9e0034b",
+      "username": "Asma",
+      "email": "asma@gmail.com",
+      "role": "admin",
+      "messages": [
+        {
+          "message": "Hello...",
+          "time": "2:54 PM",
+          "date": "2024/2/9"
+        },
+        {
+          "message": "I think I'm the only person live here...",
+          "time": "2:57 PM",
+          "date": "2024/2/9"
+        }
+      ]
+    },
+    {
+      "_id": "6575a28ca7547c41d758fef8",
+      "username": "Laiba",
+      "email": "laiba@gmail.com",
+      "role": "user",
+      "messages": [
+        {
+          "message": "Yes, what do you want?",
+          "time": "2:55 PM",
+          "date": "2024/2/9"
+        },
+        {
+          "message": "Oh I see. No, you're not the only one",
+          "time": "2:59 PM",
+          "date": "2024/2/9"
+        }
+      ]
+    }
+  ]
+}
