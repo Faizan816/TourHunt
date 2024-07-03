@@ -1,0 +1,12 @@
+.logoContainer {
+    background-color: #143E56;
+}
+.menu p:hover {
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: #1F516D;
+}
